@@ -1,0 +1,69 @@
+=== РЕЖИМ ===
+preprocess_mode: none
+enhancement_mode: gamma_then_clahe
+mean_threshold: 105.0
+p90_threshold: 170.0
+
+=== ОБЩИЕ ИТОГИ ===
+Количество query: 60
+Top-1 exact accuracy: 80.00%
+Top-1 class accuracy: 100.00%
+Top-3 exact accuracy: 98.33%
+Top-3 class accuracy: 100.00%
+Среднее время дескриптора: 83.809 ms
+Среднее полное время match: 100.621 ms
+
+=== ПО ТИПАМ ИСКАЖЕНИЙ ===
+[bright]
+  N = 10
+  Top-1 exact: 50.00%
+  Top-1 class: 100.00%
+  Top-3 exact: 90.00%
+  Top-3 class: 100.00%
+  Mean descriptor time: 92.693 ms
+  Mean full match time: 117.402 ms
+
+[dark]
+  N = 10
+  Top-1 exact: 70.00%
+  Top-1 class: 100.00%
+  Top-3 exact: 100.00%
+  Top-3 class: 100.00%
+  Mean descriptor time: 101.374 ms
+  Mean full match time: 122.031 ms
+
+[gauss]
+  N = 10
+  Top-1 exact: 90.00%
+  Top-1 class: 100.00%
+  Top-3 exact: 100.00%
+  Top-3 class: 100.00%
+  Mean descriptor time: 78.480 ms
+  Mean full match time: 96.129 ms
+
+[orig]
+  N = 10
+  Top-1 exact: 100.00%
+  Top-1 class: 100.00%
+  Top-3 exact: 100.00%
+  Top-3 class: 100.00%
+  Mean descriptor time: 84.406 ms
+  Mean full match time: 86.121 ms
+
+[scale]
+  N = 10
+  Top-1 exact: 80.00%
+  Top-1 class: 100.00%
+  Top-3 exact: 100.00%
+  Top-3 class: 100.00%
+  Mean descriptor time: 62.022 ms
+  Mean full match time: 75.668 ms
+
+[sp]
+  N = 10
+  Top-1 exact: 90.00%
+  Top-1 class: 100.00%
+  Top-3 exact: 100.00%
+  Top-3 class: 100.00%
+  Mean descriptor time: 83.882 ms
+  Mean full match time: 106.374 ms

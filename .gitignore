@@ -37,3 +37,34 @@ data/db_*.json
 outputs/logs/*.csv
 !outputs/logs/*summary.txt
 !outputs/logs/*combined_summary.csv
+
+# Local checkpoints and drafts
+checkpoints/
+data/reference/
+data/reference_TheWorld50/
+data/reference_TheWorld50_reserve/
+data/reference_bridge_demo10/
+data/raw/
+data/db.json
+data/commons_manifest_*.csv
+
+# Extra scripts not included in stable release
+crop_roi_manual.py
+download_commons_from_manifest.py
+make_topk_matching_screenshot.py
+prepare_sources.py
+visualize_pipeline.py
+requirements-lock-after.txt
+
+# Extra logs / old experiments
+outputs/logs/*.txt
+!outputs/logs/TheWorld50_quantile_full_summary.txt
+!outputs/logs/TheWorld50_balanced10_quantile_summary.txt
+!outputs/logs/bridge_demo10_quantile_summary.txt
+!outputs/logs/bridge_demo10_summary.txt
+
+outputs/logs/TheWorld50_balanced10_denoise_*_summary.txt
+outputs/logs/*errors.txt
+outputs/logs/orb_*.txt
+outputs/logs/robustness_*.txt
+outputs/logs/v03_*.txt
