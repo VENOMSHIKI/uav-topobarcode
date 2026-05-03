@@ -1,0 +1,41 @@
+Dataset starter for UAV topological barcode prototype
+
+Files placed in data/reference:
+- bridge_01.png
+- bridge_02.png
+- crossroad_01.png
+- roof_01.png
+- field_mark_01.png
+
+Source mapping:
+1) bridge_01.png
+   Source page: Wikimedia Commons, File:The Cable-stayed bridge in Murom.jpg
+   Original URL: https://upload.wikimedia.org/wikipedia/commons/2/2f/The_Cable-stayed_bridge_in_Murom.jpg
+   License on source page: CC BY-SA 3.0
+   Notes: cropped from original for prototype use
+
+2) bridge_02.png
+   Source page: Wikimedia Commons, File:Oka River. Cable bridge in Murom P5231282 2650.jpg
+   Original URL: https://upload.wikimedia.org/wikipedia/commons/d/d8/Oka_River._Cable_bridge_in_Murom_P5231282_2650.jpg
+   License on source page: CC BY-SA 4.0
+   Notes: cropped from original for prototype use
+
+3) crossroad_01.png
+   Source page: LiveJournal post "Муром с высоты. Лето 2022." by zdorovs
+   Original URL: https://ic.pics.livejournal.com/zdorovs/16627846/1997573/1997573_original.jpg
+   Notes: cropped from original for prototype/lab use; check rights before publication
+
+4) roof_01.png
+   Source page: LiveJournal post "Муром с высоты. Лето 2022." by zdorovs
+   Original URL: https://ic.pics.livejournal.com/zdorovs/16627846/1999575/1999575_original.jpg
+   Notes: cropped from original for prototype/lab use; check rights before publication
+
+5) field_mark_01.png
+   Source page: LiveJournal post "Муром с высоты. Лето 2022." by zdorovs
+   Original URL: https://ic.pics.livejournal.com/zdorovs/16627846/2009637/2009637_original.jpg
+   Notes: cropped from original for prototype/lab use; check rights before publication
+
+Recommended project usage:
+- keep these files in data/reference as the initial reference database
+- put new test ROI into data/query
+- later replace LiveJournal-derived images with your own imagery or clearly licensed images before article submission

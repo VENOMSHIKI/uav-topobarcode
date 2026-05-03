@@ -1,0 +1,39 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Temporary / archives
+_archive_unused/
+*.zip
+*.rar
+*.7z
+
+# Raw downloaded sources and generated queries
+data/raw_web/
+data/query/
+
+# Generated heavy visual outputs
+outputs/barcodes/
+outputs/visual/
+
+# Old/generated databases
+data/db_*.json
+
+# Keep only selected logs through explicit add if needed
+outputs/logs/*.csv
+!outputs/logs/*summary.txt
+!outputs/logs/*combined_summary.csv

@@ -1,0 +1,4 @@
+﻿denoise_mode,query_count,top1_exact,top1_class,top3_exact,top3_class,descriptor_ms,full_match_ms
+none,300,84.0,88.33,89.67,94.33,39.189,39.669
+median3,300,77.33,82.0,88.0,93.67,44.854,45.485
+gaussian3,300,79.33,87.0,89.0,95.0,40.919,41.522
