@@ -1,0 +1,6 @@
+﻿strategy,query_count,vector_length,transforms,top1_exact,top1_class,top3_exact,top3_class,descriptor_ms,full_match_ms
+single,480,152,raw,93.54,95.83,95.83,98.12,60.818,61.547
+raw_median3,480,152,raw|median3,93.12,95.83,96.04,98.12,110.538,111.544
+raw_median5,480,152,raw|median5,93.54,95.83,95.83,98.12,99.52,100.543
+raw_morph,480,152,raw|openclose|closeopen,93.33,95.83,95.83,98.12,136.922,138.275
+robust_all,480,152,raw|median3|median5|openclose|closeopen,92.92,95.83,96.04,98.12,209.87,211.738

@@ -1,0 +1,74 @@
+=== CONFUSION ANALYSIS ===
+CSV: outputs\logs\TheWorld50_full_v05_clean_texture100_results.csv
+Количество query: 480
+
+=== OVERALL ===
+Top-1 exact: 93.54%
+Top-1 class: 95.83%
+Top-3 exact: 95.83%
+Top-3 class: 98.12%
+
+=== CONFUSION MATRIX: TRUE x PRED ===
+true\pred             bridge    city_block         river          roof        street
+bridge                    59             0             0             0             1
+city_block                 1           147             4             4             0
+river                      0             2            79             3             0
+roof                       0             3             2           109             0
+street                     0             0             0             0            66
+
+=== PER CLASS ===
+bridge: N=60, Top-1 exact=98.33%, Top-1 class=98.33%, Top-3 exact=100.00%, Top-3 class=100.00%
+city_block: N=156, Top-1 exact=88.46%, Top-1 class=94.23%, Top-3 exact=93.59%, Top-3 class=98.08%
+river: N=84, Top-1 exact=92.86%, Top-1 class=94.05%, Top-3 exact=94.05%, Top-3 class=95.24%
+roof: N=114, Top-1 exact=94.74%, Top-1 class=95.61%, Top-3 exact=95.61%, Top-3 class=98.25%
+street: N=66, Top-1 exact=100.00%, Top-1 class=100.00%, Top-3 exact=100.00%, Top-3 class=100.00%
+
+=== CLASS CONFUSIONS TRUE -> PRED ===
+city_block -> river: 4
+city_block -> roof: 4
+river -> roof: 3
+roof -> city_block: 3
+river -> city_block: 2
+roof -> river: 2
+bridge -> street: 1
+city_block -> bridge: 1
+
+=== EXACT CONFUSIONS TRUE_NAME -> TOP1_NAME ===
+city_block_01 -> city_block_24: 2
+bridge_12 -> street_05: 1
+city_block_03 -> city_block_21: 1
+city_block_06 -> city_block_25: 1
+city_block_14 -> city_block_13: 1
+city_block_15 -> bridge_10: 1
+city_block_17 -> river_09: 1
+city_block_18 -> river_05: 1
+city_block_18 -> roof_02: 1
+city_block_19 -> city_block_13: 1
+city_block_19 -> city_block_20: 1
+city_block_19 -> river_04: 1
+city_block_19 -> roof_02: 1
+city_block_20 -> river_05: 1
+city_block_20 -> city_block_15: 1
+city_block_20 -> roof_02: 1
+city_block_26 -> city_block_11: 1
+city_block_26 -> roof_12: 1
+river_04 -> city_block_09: 1
+river_04 -> roof_06: 1
+river_05 -> city_block_09: 1
+river_05 -> roof_06: 1
+river_06 -> roof_06: 1
+river_08 -> river_09: 1
+roof_03 -> city_block_14: 1
+roof_06 -> river_05: 1
+roof_07 -> city_block_26: 1
+roof_10 -> river_07: 1
+roof_12 -> city_block_11: 1
+roof_17 -> roof_10: 1
+
+=== ERRORS BY VARIANT ===
+bright: N=80, wrong_top1_exact=5, wrong_top1_class=3, Top-1 exact=93.75%, Top-1 class=96.25%
+dark: N=80, wrong_top1_exact=4, wrong_top1_class=2, Top-1 exact=95.00%, Top-1 class=97.50%
+gauss: N=80, wrong_top1_exact=5, wrong_top1_class=3, Top-1 exact=93.75%, Top-1 class=96.25%
+orig: N=80, wrong_top1_exact=0, wrong_top1_class=0, Top-1 exact=100.00%, Top-1 class=100.00%
+scale: N=80, wrong_top1_exact=3, wrong_top1_class=1, Top-1 exact=96.25%, Top-1 class=98.75%
+sp: N=80, wrong_top1_exact=14, wrong_top1_class=11, Top-1 exact=82.50%, Top-1 class=86.25%
